@@ -44,6 +44,7 @@ env:
   - LXC_NAME=docker LXC_DISTRO=ubuntu LXC_RELEASE=artful
 
 before_install:
+  - test "${LXC_NAME}" != "docker" && sudo modprobe wireguard
   - test "${LXC_NAME}" != "docker" || docker build -t travis/algo .
 
 install:
