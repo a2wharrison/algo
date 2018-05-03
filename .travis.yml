@@ -13,12 +13,8 @@ matrix:
 addons:
   apt:
     sources:
-<<<<<<< HEAD
-      - sourceline: 'ppa:ubuntu-lxc/stable'
-=======
     # - sourceline: 'ppa:ubuntu-lxc/stable'
     - sourceline: 'ppa:wireguard/wireguard'
->>>>>>> xenial travisci
     packages:
       - python-pip
       - lxd
